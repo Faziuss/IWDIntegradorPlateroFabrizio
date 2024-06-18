@@ -1,24 +1,24 @@
 // Instalacion
 const d = document;
 
-const iForm = document.querySelector(".installationsForm");
+const iForm = d.getElementById("installationsForm");
 
 iForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const id = parseInt(document.getElementById("request-id").value, 10);
-  console.log(id);
+  const id = parseInt(d.getElementById("request-id").value, 10);
+  //console.log(id);
   let found = false;
 
-  const tr = document.querySelectorAll(".table tbody tr");
+  const tr = d.querySelectorAll(".table tbody tr");
 
-  console.log(tr);
+  //console.log(tr);
 
   for (let i = 0; i < tr.length; i++) {
     const cells = tr[i].getElementsByTagName("td");
     console.log(cells);
     if (parseInt(cells[0].textContent, 10) === id) {
-      console.log("COINCIDE ", cells[1].textContent);
+      //console.log("COINCIDE ", cells[1].textContent);
       found = true;
       tr[i].remove();
       break;
