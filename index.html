@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uRed</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navBar">
+      <a href="./" class="logo">
+        <img src="./assets/logo.png" alt="logo">
+      </a>
+      <ul>
+        <li><a href="./">Inicio</a></li>
+        <li><a href="./pages/solicitar.html">Solicitar Instalación</a></li>
+        <li><a href="./pages/estado.html">Estado de Solicitud</a></li>
+        <li>
+          <a href="./pages/pruebas.html">Pruebas de Factibilidad Técnica</a>
+        </li>
+        <li><a href="./pages/instalaciones.html">Instalaciones</a></li>
+        <li><a href="./pages/about.html">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="index-title-section">
+      <div class="index-title-container">
+        <h1>Bienvenido a uRed</h1>
+      </div>
+    </section>
+    <section class="promotions-section">
+      <div class="promotions-title-container">
+        <h2>Servicios/Promociones</h2>
+      </div>
+      <div class="promotions-container">
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <div class="promo-card">
+              <h3>300Mb</h3>
+              <p><strong>Precio: $9,999/Mes</strong></p>
+              <p>+ $5,000 instalación de Router</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="promo-card">
+              <h3>500Mb</h3>
+              <p><strong>Precio: $16,999/Mes</strong></p>
+              <p><strong>PAGAS $11,699 (35% de descuento) los primeros 3 meses!</strong></p>
+              <p>+ $5,000 instalación de Router</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="promo-card">
+              <h3>700Mb</h3>
+              <p><strong>Precio: $20,000/Mes</strong></p>
+              <p>Instalacion de router incluida</p>
+            </div>
+          </div>
+          <div class="carousel-btns">
+            <a class="prev" href="#">&laquo;</a>
+            <a class="next" href="#">&raquo;</a>
+          </div>
+        </div>
+
+        <button class="btn-submit" id="request-service" onclick="redirectRequest()">Solicita tu Servicio</button>
+      </div>
+    </section>
+    <section class="check-status">
+      <h2>Verificar Estado de Solicitud</h2>
+      <form id="formDNI">
+        <div>
+          <label for="dni">Ingrese su DNI:</label>
+          <input type="text" id="dni" name="dni" required>
+        </div>
+        <button class="btn-submit" type="submit">Verificar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Redes Sociales</p>
+      <div class="social-media">
+        <a href="#" class="social-link">
+          <img src="./assets/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="#" class="social-link">
+          <img src="./assets/twitter-icon.png" alt="Twitter">
+        </a>
+        <a href="#" class="social-link">
+          <img src="./assets/instagram-icon.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="policies">
+        <a href="#">Políticas de privacidad</a>
+        <a href="#">Términos de servicio</a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

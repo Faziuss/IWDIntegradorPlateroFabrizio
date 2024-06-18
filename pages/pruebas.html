@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uRed | Pruebas de Factibilidad Técnica</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navBar">
+        <a href="../" class="logo">
+          <img src="../assets/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li><a href="../">Inicio</a></li>
+          <li><a href="./solicitar.html">Solicitar Instalación</a></li>
+          <li><a href="./estado.html">Estado de Solicitud</a></li>
+          <li><a href="./pruebas.html">Pruebas de Factibilidad Técnica</a></li>
+          <li><a href="./instalaciones.html">Instalaciones</a></li>
+          <li><a href="./about.html">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="table-section">
+        <h2>Pruebas Pendientes</h2>
+        <table class="tests-table">
+          <thead>
+            <tr>
+              <th>ID Solicitud</th>
+              <th>Cliente</th>
+              <th>Dirección</th>
+              <th>Plan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Gonzalo Flores</td>
+              <td>25 de Mayo 366</td>
+              <td>300MB</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Carmen Rodriguez</td>
+              <td>Av. Libertador entre Salta 550</td>
+              <td>500MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="testForm-section">
+        <form id="testForm">
+          <h2>Formulario de Pruebas de Factibilidad Técnica</h2>
+          <div>
+            <label for="fecha-prueba">Fecha y Hora de la Prueba:</label>
+            <input
+              type="datetime-local"
+              id="fecha-prueba"
+              name="fecha-prueba"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="resultado">Resultado:</label>
+            <select id="resultado" name="resultado" required>
+              <option value="exito">Éxito</option>
+              <option value="fallo">Fallo</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="solicitud">Solicitud a la que corresponde:</label>
+            <input type="text" id="solicitud" name="solicitud" required />
+          </div>
+
+          <div>
+            <label for="tecnico">Técnico que realizó la prueba:</label>
+            <input type="text" id="tecnico" name="tecnico" required />
+          </div>
+
+          <button class="btn-submit" type="submit">Registrar Resultado</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>Redes Sociales</p>
+        <div class="social-media">
+          <a href="#" class="social-link">
+            <img src="../assets/facebook-icon.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="../assets/twitter-icon.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="../assets/instagram-icon.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="policies">
+          <a href="#">Políticas de privacidad</a>
+          <a href="#">Términos de servicio</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/tests.js"></script>
+  </body>
+</html>
